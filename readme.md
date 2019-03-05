@@ -2,14 +2,12 @@
 
 ## Setup
 
-This repository includes the initial setup for this Kata, including the specs. It uses the [Kahlan library](http://kahlan.readthedocs.org/en/latest/), which you might not be familiar with. But, don't worry, there's nothing really to learn. Review the specs, and you'll understand the basic syntax in less than a minute.
+This repository includes the initial setup for this Kata, including the specs. It uses [phpspec](http://www.phpspec.net).
 
 Your job is to:
 
 1. Refactor the monstrous code in the `GildedRose.php` class.
-2. Add a new item type, "Conjured". The specs for this item are commented out in the `GildedRoseSpec.php` file.
-
-When finished (or for help), you may review the solution by switching to the "solution" branch of this repo.
+2. Add a new item type, "Conjured".
 
 ## Rules
 
@@ -34,7 +32,8 @@ Pretty simple, right? Well this is where it gets interesting:
 
 We have recently signed a supplier of conjured items. This requires an update to our system:
 
-"Conjured" items degrade in Quality twice as fast as normal items
+- "Conjured" items degrade in Quality twice as fast as normal items
 
 Just for clarification, an item can never have its Quality increase above 50, however "Sulfuras" is a legendary item and as such its Quality is 80 and it never alters.
 
+Feel free to make any changes to the UpdateQuality method and add any new code as long as everything still works correctly. However, do not alter the Item class or Items property as those belong to the goblin in the corner who will insta-rage and one-shot you as he doesn’t believe in shared code ownership (you can make the UpdateQuality method and Items property static if you like, we’ll cover for you).
