@@ -4,6 +4,12 @@
 
 This repository includes the initial setup for this Kata, including the specs. It uses [phpspec](http://www.phpspec.net).
 
+Check out the repository and run:
+```
+composer install
+bin/phpspec run
+```
+
 Your job is to:
 
 1. Refactor the monstrous code in the `GildedRose.php` class.
